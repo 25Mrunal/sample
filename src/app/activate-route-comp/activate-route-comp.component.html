@@ -1,0 +1,27 @@
+
+<div class="container text-center n-4" ></div>
+
+<h1 class="text-info"> Products data</h1>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>product</th>
+                <th>Price</th>
+                <th>view</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of productInfo">
+                <td>{{i.pid}}</td>
+                <td>{{i'pname}}</td>
+                <td>{{i.price}}</td>
+                <td><a [routerLink]="['/detail',i.pid]"></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
